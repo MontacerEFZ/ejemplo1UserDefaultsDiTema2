@@ -22,14 +22,23 @@ class ViewController: UIViewController {
 
 
     @IBAction func btnguardar(_ sender: Any) {
+        guard let palabra = txtPalabra.text
+        else{
+            return
+        }
+        datos.guardarTexto(texto: palabra, clave: "TEXTITO")
+        txtPalabra.text = ""
     }
     
     
     @IBAction func btnMostrar(_ sender: Any) {
+        let palabra = datos.recuperarTexto(clave: "TEXTITO")
+        lbTexto.text = palabra
     }
     
     
     @IBAction func btnborrar(_ sender: Any) {
+        datos.borrarTexto(clave: "TEXTITO")
     }
 }
 
