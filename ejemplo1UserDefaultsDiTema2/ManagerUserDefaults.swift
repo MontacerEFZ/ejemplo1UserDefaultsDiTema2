@@ -28,4 +28,14 @@ class ManagerUserDefaults: NSObject {
         UserDefaults.standard.removeObject(forKey: clave)
         UserDefaults.standard.synchronize()
     }
+    
+    class func inicializarAjustes(){ //class es para que sea static
+        let defaults = UserDefaults.standard
+        
+        if defaults.bool(forKey: "VALORESGUARDADOS") == false{
+            let defaultsValues: [String: Any] = (["MOSTRARMENSAJE": true, "NOMBRE":"Usuario","VALORESGUARDADOS": true])
+            defaults.register(defaults: defaultsValues)
+        }
+        //ir a la izquierda, en appDelegate.swift y añadir en el metodo "func application" la funcion inicializarAjustes
+    }
 }
