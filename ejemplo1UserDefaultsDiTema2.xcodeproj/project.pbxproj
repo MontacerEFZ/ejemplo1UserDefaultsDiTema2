@@ -15,6 +15,7 @@
 		1B79D3822B187CB3006E2136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B79D3802B187CB3006E2136 /* LaunchScreen.storyboard */; };
 		1B79D38D2B187CB3006E2136 /* ejemplo1UserDefaultsDiTema2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79D38C2B187CB3006E2136 /* ejemplo1UserDefaultsDiTema2Tests.swift */; };
 		1B79D3982B187CB3006E2136 /* ejemplo1UserDefaultsDiTema2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79D3972B187CB3006E2136 /* ejemplo1UserDefaultsDiTema2UITests.swift */; };
+		1B79D3A92B187E9B006E2136 /* ManagerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79D3A82B187E9B006E2136 /* ManagerUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1B79D3932B187CB3006E2136 /* ejemplo1UserDefaultsDiTema2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ejemplo1UserDefaultsDiTema2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B79D3972B187CB3006E2136 /* ejemplo1UserDefaultsDiTema2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ejemplo1UserDefaultsDiTema2UITests.swift; sourceTree = "<group>"; };
 		1B79D3992B187CB3006E2136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B79D3A82B187E9B006E2136 /* ManagerUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1B79D37E2B187CB3006E2136 /* Assets.xcassets */,
 				1B79D3802B187CB3006E2136 /* LaunchScreen.storyboard */,
 				1B79D3832B187CB3006E2136 /* Info.plist */,
+				1B79D3A82B187E9B006E2136 /* ManagerUserDefaults.swift */,
 			);
 			path = ejemplo1UserDefaultsDiTema2;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				1B79D37A2B187CB2006E2136 /* ViewController.swift in Sources */,
 				1B79D3762B187CB2006E2136 /* AppDelegate.swift in Sources */,
+				1B79D3A92B187E9B006E2136 /* ManagerUserDefaults.swift in Sources */,
 				1B79D3782B187CB2006E2136 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
