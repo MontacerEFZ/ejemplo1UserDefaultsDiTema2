@@ -29,6 +29,21 @@ class ManagerUserDefaults: NSObject {
         UserDefaults.standard.synchronize()
     }
     
+    func mostrarMensaje(mostrar: Bool){ //escribir
+        UserDefaults.standard.set(mostrar, forKey: "MOSTRARMENSAJE")
+        UserDefaults.standard.synchronize()
+    }
+    
+    
+    func recuperarMensaje(clave: String) ->Bool{ //leer
+        guard let mostrarMensaje: Bool =
+                UserDefaults.standard.value(forKey: clave) as? Bool
+        else{
+        return false
+        }
+        return mostrarMensaje
+    }
+    
     class func inicializarAjustes(){ //class es para que sea static
         let defaults = UserDefaults.standard
         

@@ -18,6 +18,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         datos = ManagerUserDefaults()
+        let nombreUsuario = datos.recuperarTexto(clave: "NOMBRE")
+        let mostrarMensaje = datos.recuperarMensaje(clave: "MOSTRARMENSAJE")
+        if mostrarMensaje {
+            let alert = UIAlertController(title: "BIENVENID@", message: "Hola \(nombreUsuario) espero que te guste", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+        }
     }
 
 
